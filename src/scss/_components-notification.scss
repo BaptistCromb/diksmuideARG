@@ -1,0 +1,40 @@
+.c-notification {
+  background-color: black;
+  border: 2px solid green;
+  position: absolute;
+  z-index: 2;
+  top: 80vh;
+  left: 20vw;
+  width: 60vw;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  &__icon {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    right: 2%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  // &__image {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+.c-dialogue {
+  background-color: white;
+  border: 2px solid green;
+  position: absolute;
+  padding: 1em 2rem;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  p {
+    max-width: 20rem;
+    margin: 0;
+  }
+}

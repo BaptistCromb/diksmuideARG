@@ -1,0 +1,64 @@
+.c-targetRange {
+  &__target {
+    background-image: url("../img/target.png");
+    width: 6rem;
+    height: 6rem;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    cursor: crosshair;
+    &--still {
+      width: 20rem;
+      height: 20rem;
+      top: 60vh;
+      left: 1vw;
+      &#target-right--still {
+        left: 80vw;
+        top: 62vh;
+      }
+    }
+    &--hidden {
+      left: 25.5vw;
+      top: 60vh;
+      width: 2.4rem;
+      background-color: black;
+      opacity: 0.1;
+      &#target-right--hidden {
+        left: 38vw;
+        top: 61vh;
+      }
+    }
+    &--horizontal {
+      width: 10rem;
+      height: 10rem;
+    }
+    &--vertical {
+      left: 6vw;
+      width: 7rem;
+      height: 7rem;
+      &#target-left--vertical {
+        left: 86vw;
+      }
+    }
+    &#target-left--horizontal {
+      top: 75vh;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    z-index: 2;
+  }
+  &__backgroundImage {
+    background-image: url("../img/duitsebunker.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+}

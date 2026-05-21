@@ -1,0 +1,28 @@
+.c-paxgate {
+  &__backgroundimage {
+    background-image: url("../img/paxgate.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    left: 20vw;
+    top: 0;
+  }
+  &__shadow {
+    background-color: black;
+    width: 400px;
+    height: 565px;
+    position: absolute;
+    left: 20vw;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+  //   &__inputfield {
+  //   }
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(173, 175, 177);
+  //   rgb(217, 226, 235)
+}

@@ -1,0 +1,26 @@
+.c-market {
+  &--diving {
+    background-color: rgb(59, 148, 166);
+  }
+  &__submarine {
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    left: 50vw;
+  }
+  &__fish {
+    width: 80px;
+    position: absolute;
+    cursor: pointer;
+  }
+  &__fishtitle {
+    background-color: rgb(23, 101, 105);
+    padding: 0.5rem 2rem;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    top: 10vh;
+    text-align: center;
+  }
+}

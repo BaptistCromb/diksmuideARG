@@ -1,0 +1,12 @@
+import "../scss/styles.scss";
+import * as bootstrap from "bootstrap";
+import "./draggableobjects.js";
+import "./localstoragecheck.js";
+import "./mannekeclickcheck.js";
+import "./offeringCheck.js";
+import "./wordcheck.js";
+import "./music.js";
+import "./navanimate.js";
+import "./shootingrange.js";
+import "./submarine.js";
+// import "./admin.js";

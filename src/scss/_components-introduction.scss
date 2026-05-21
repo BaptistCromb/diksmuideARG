@@ -1,0 +1,102 @@
+@use "core" as *;
+@use "bs-core" as *;
+
+.c-introduction {
+  background-color: black;
+  height: 100vh;
+  h1 {
+    position: absolute;
+    top: 50vh;
+    height: 10vh;
+  }
+  &__checkbox {
+    position: absolute;
+    top: 60vh;
+    border: 2px solid white;
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &--yes {
+      right: 60vw;
+      font-weight: bold;
+      color: white;
+      transition: background-color 500ms;
+      &:hover {
+        background-color: red;
+      }
+    }
+    &--no {
+      right: 30vw;
+      font-weight: bold;
+      color: white;
+      transition: background-color 500ms;
+      &:hover {
+        background-color: green;
+      }
+    }
+  }
+}
+.c-volksalmanakNavigation {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  img {
+    width: 4rem;
+  }
+}
+.js-draggable {
+  position: absolute;
+  img {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  @for $i from 1 through 5 {
+    @if $i % 2 == 0 {
+      &#draggableobject#{$i} {
+        left: 16vw * $i;
+        top: 65vh;
+        cursor: grab;
+      }
+    } @else {
+      &#draggableobject#{$i} {
+        left: 16vw * $i;
+        top: 80vh;
+        cursor: grab;
+      }
+    }
+  }
+  &__completed {
+    position: absolute;
+    // z-index: 2;
+    // height: 100px;
+    // width: 100%;
+    // bottom: 0;
+    // opacity: 0.6;
+    // border-radius: 100%;
+    // background-color: green;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  i {
+    z-index: 3;
+    font-size: 10rem;
+    position: absolute;
+    left: -10px;
+    bottom: -70%;
+    color: white;
+  }
+}
+
+.js-manneke {
+  position: absolute;
+  width: 15vw;
+  cursor: pointer;
+  //   top: 4vh;
+  left: 43vw;
+}

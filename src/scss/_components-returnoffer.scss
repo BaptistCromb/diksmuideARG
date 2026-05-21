@@ -1,0 +1,39 @@
+.c-offerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 7;
+  &__manneke {
+    position: absolute;
+    width: 16vw;
+    cursor: pointer;
+    top: 25%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+  }
+  &__item {
+    position: absolute;
+    width: 6vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6rem;
+    content: "Test";
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 8;
+  }
+}

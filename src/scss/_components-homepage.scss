@@ -1,0 +1,82 @@
+.c-homepage {
+  background-color: gray;
+  background-image: url("../img/achtergrondmarkt.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__arrow {
+    font-size: 2rem;
+    color: yellow;
+    background-color: orange;
+    cursor: pointer;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    background-color: green;
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+    top: 1rem;
+    cursor: pointer;
+    p {
+      font-weight: bold;
+      color: yellow;
+      font-size: 1rem;
+      transform: translateY(25%);
+      position: relative;
+    }
+    img {
+      width: 4em;
+    }
+  }
+  &__monument {
+    position: absolute;
+    img {
+      height: 25rem;
+    }
+  }
+  .js-jacques {
+    left: 11vw;
+    top: 40vh;
+  }
+  .js-mannekemoane {
+    left: 35vw;
+    top: 50vh;
+    z-index: 2;
+    img {
+      height: 15rem;
+    }
+  }
+  &__shadow {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--shoppingstreet {
+      width: 200px;
+      height: 280px;
+      top: 40vh;
+      right: 19vw;
+      .bi-lock-fill {
+        color: yellow;
+      }
+    }
+    .bi-lock-fill {
+      font-size: 2rem;
+    }
+  }
+  .js-shoppingstreet_key {
+    position: absolute;
+    color: yellow;
+    top: 72vh;
+    font-size: 2rem;
+    left: 34.5vw;
+    z-index: 1;
+    cursor: grab;
+  }
+}

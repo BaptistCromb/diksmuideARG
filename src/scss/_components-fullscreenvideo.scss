@@ -1,0 +1,29 @@
+.c-fullscreenvid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  &--body {
+    background-color: black;
+  }
+  &--exit {
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    left: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    top: 1rem;
+    background-color: white;
+    color: black;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}

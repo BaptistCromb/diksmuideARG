@@ -1,0 +1,45 @@
+@use "core" as *;
+@use "bs-core" as *;
+
+.c-nav {
+  background-color: green;
+  position: fixed;
+  top: calc(80vh + 4rem);
+  left: 25vw;
+  height: 2.5rem;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition:
+    opacity 1s,
+    top 1s;
+
+  a {
+    color: white;
+  }
+
+  ul {
+    // background-color: green;
+    display: flex;
+    width: 80%;
+    margin: 0;
+    padding: 0rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  &__icons {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    transform: translateX(-50%);
+    transition: top 1s;
+    left: 50vw;
+    top: calc(80vh + 2rem);
+    i {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}

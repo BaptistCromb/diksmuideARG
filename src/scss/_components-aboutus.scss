@@ -1,0 +1,23 @@
+.c-aboutUs {
+  &__logo {
+    width: 15.625rem;
+  }
+}
+.u-censored {
+  background-color: black;
+  &__darkness {
+    position: relative;
+  }
+  &__darkness::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+}
+.u-mooncensor {
+  color: white;
+}

@@ -1,0 +1,21 @@
+.u-hide {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.u-adminshadow {
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.u-arrow {
+  &--blocked {
+    position: relative;
+    &::after {
+      background-color: black;
+    }
+  }
+}
