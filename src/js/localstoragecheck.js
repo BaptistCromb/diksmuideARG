@@ -36,7 +36,9 @@ if (document.title == "Take a path") {
   }
 } else if (document.title == "Collect the fish") {
   if (localStorage.getItem("Fishmarket") != null) {
-    console.log("banaan");
+    const response = await fetch(`http://localhost:3000/api/market?word=${localStorage.getItem("Fishmarket")}`);
+    const json = await response.text();
+    eval(json);
   } else {
     const response = await fetch(`http://localhost:3000/api/market`);
     const json = await response.text();

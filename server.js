@@ -332,7 +332,7 @@ app.get("/api/offeringsCompleted", (req, res) => {
 app.get("/api/market", (req, res) => {
   const word = req.query.word;
   if (word == "Amazing Fisher") {
-    res.send("<h1>Allo</h1>");
+    res.send("let title = document.createElement('h1'); title.innerText='Hallo'; document.body.append(title);");
   } else {
     res.send(`const nauticaLeviathanEastereggFunction = (submarine, left) => {
       if (leviathanSpawned) return;
@@ -349,12 +349,10 @@ app.get("/api/market", (req, res) => {
       leviathan.classList.add("js-leviathan");
       leviathan.src = "../img/fishies/EasterEggFishy.png";
   
-      // Styling
       leviathan.style.position = "absolute";
       leviathan.style.rotate = "90deg";
       leviathan.style.width = "2000px";
-      leviathan.style.zIndex = "9999";
-      leviathan.style.pointerEvents = "none";
+      leviathan.style.zIndex = "9";
   
       // Smooth movement
       leviathan.style.transition = "top 0.18s linear";
@@ -363,7 +361,7 @@ app.get("/api/market", (req, res) => {
       let distance = 100;
       const interval = setInterval(() => {
         if (distance == -100) {
-          console.log("Yo bro theres no hidden achievement, what you doin");
+          console.log("Yo bro theres no hidden achievement, what you doin' up there");
         } else if (window.innerHeight * parseInt(leviathan.style.top) <= submarine.getBoundingClientRect().top) {
           if (chomp == false) {
             new Audio("../music/SFX/market/chomp-1.mp3").play();
@@ -378,8 +376,6 @@ app.get("/api/market", (req, res) => {
         leviathan.style.left = parseInt(submarine.style.left) + submarinewidth - parseInt(leviathan.style.width) / 2 + "px";
         distance -= 0.5;
       }, 50);
-  
-      // SCHIET OMHOOG
     };
     const nauticaCheck = (submarine, left) => {
       if (left > window.innerWidth) {
