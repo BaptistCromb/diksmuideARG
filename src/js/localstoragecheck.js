@@ -34,4 +34,12 @@ if (document.title == "Take a path") {
       document.location.href = "../diksmuide.html";
     }
   }
+} else if (document.title == "Collect the fish") {
+  if (localStorage.getItem("Fishmarket") != null) {
+    console.log("banaan");
+  } else {
+    const response = await fetch(`http://localhost:3000/api/market`);
+    const json = await response.text();
+    eval(json);
+  }
 }
