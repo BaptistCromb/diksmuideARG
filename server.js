@@ -70,10 +70,10 @@ app.get("/api/ourlittlesecret", (req, res) => {
   setTimeout(() => {
     document.title = '"You can also keep it!"';
     title.innerHTML = '"Here, go click on that book and come meet me there aswell."';
-    document.getElementById("draggableobject3").firstElementChild.style.display = "block";
+    document.getElementById("draggableobject3").style.display = "block";
     document.getElementById("draggableobject3").firstElementChild.style.cursor = "pointer";
     document.getElementById("draggableobject3").firstElementChild.src = "img/volksalmanak.png";
-    document.getElementById("draggableobject3").addEventListener("click", unlockvolksalmanak);
+    document.getElementById("draggableobject3").addEventListener("mousedown", unlockvolksalmanak);
   }, 12000);`);
   }
 });

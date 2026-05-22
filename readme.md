@@ -8,5 +8,5 @@ Terminal -> "npm init"
 To run the code (project/frontend):
 "npm run dev"
 
-To run the api (server/backend):
+To run the api (server/backend): (RUN IN A DIFFERENT TERMINAL)
 "node server.js"
