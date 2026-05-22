@@ -56,8 +56,12 @@ app.get("/api/ourlittlesecret", (req, res) => {
   let draggables = document.getElementsByClassName("js-draggable");
   document.title = '"Hello Traveller!"';
   title.innerHTML = '"Oh traveller! How kind of you to click on me!"';
-  for (let i = 1; i <= 5; i++) {
-    document.getElementById("draggableobject" + i).firstElementChild.style.display = "none";
+  for (let i = 1; i <= 2; i++) {
+    document.getElementById("draggableobject" + i).remove();
+  }
+  document.getElementById("draggableobject3").style.display = "None";
+  for (let i = 4; i <= 5; i++) {
+    document.getElementById("draggableobject" + i).remove();
   }
   setTimeout(() => {
     document.title = '"Definitely not a pocket dimension"';
