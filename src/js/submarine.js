@@ -32,8 +32,6 @@ const nauticaLeviathanEastereggFunction = (submarine, left) => {
   // Smooth movement
   leviathan.style.transition = "top 0.18s linear";
   let submarinewidth = 150 + 75;
-  console.log(parseInt(submarine.style.left));
-  console.log(submarinewidth);
   document.body.appendChild(leviathan);
   let distance = 100;
   const interval = setInterval(() => {
@@ -51,9 +49,6 @@ const nauticaLeviathanEastereggFunction = (submarine, left) => {
       leviathan.style.top = `${distance}%`;
     }
     leviathan.style.left = parseInt(submarine.style.left) + submarinewidth - parseInt(leviathan.style.width) / 2 + "px";
-    // console.log(leviathan.style.width);
-    console.log(window.innerHeight * parseInt(leviathan.style.top), submarine.getBoundingClientRect().top);
-    // console.log(leviathan.style.left);
     distance -= 0.5;
   }, 50);
 
