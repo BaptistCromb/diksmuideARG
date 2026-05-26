@@ -38,6 +38,8 @@ const backgroundmusicfunction = (link, volume) => {
 setTimeout(() => {
   if (document.title == "Take a path") {
     backgroundmusicfunction("sound/music/HisSadCry.mp3", 0.1);
+  } else if (document.title == "History" || document.title == "About Us" || document.title == "Diksmuide") {
+    backgroundmusicfunction("../sound/music/Ai_Vist_Lo_Lop.mp3", 0.1);
   } else if (document.title == "Collect the fish") {
     backgroundmusicfunction("../sound/music/WeGoDiving__NoVocalWebsite.mp3", 0.2);
   } else if (document.title == "Applemarket") {
