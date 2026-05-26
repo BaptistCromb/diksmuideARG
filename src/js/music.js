@@ -35,21 +35,15 @@ const backgroundmusicfunction = (link, volume) => {
   documentaudio.volume = volume;
   document.body.appendChild(audiobutton);
 };
-
-if (document.title == "Take a path") {
-  setTimeout(() => {
-    backgroundmusicfunction("music/HisSadCry.mp3", 0.1);
-  }, 1000);
-} else if (document.title == "Collect the fish") {
-  setTimeout(() => {
-    backgroundmusicfunction("../sound/Music/WeGoDiving__NoVocalWebsite.mp3", 0.2);
-    console.log("KOMAAAAAANNN");
-  }, 1000);
-} else if (document.title == "Applemarket") {
-  setTimeout(() => {
-    backgroundmusicfunction("../sound/Music/marketbackgroundsong.mp3", 0.2);
-  }, 1000);
-}
+setTimeout(() => {
+  if (document.title == "Take a path") {
+    backgroundmusicfunction("sound/music/HisSadCry.mp3", 0.1);
+  } else if (document.title == "Collect the fish") {
+    backgroundmusicfunction("../sound/music/WeGoDiving__NoVocalWebsite.mp3", 0.2);
+  } else if (document.title == "Applemarket") {
+    backgroundmusicfunction("../sound/music/marketbackgroundsong.mp3", 0.2);
+  }
+}, 1000);
 
 // "music/HisSadCry.mp3"
 // 0.1

@@ -98,7 +98,7 @@ app.get("/api/yellowlock", (req, res) => {
     res.send(`
       document.querySelector(".c-homepage__shadow--shoppingstreet").style.backgroundColor = "transparent";
     const soundeffect = document.createElement("audio");
-    soundeffect.src = "music/SFX/RegularUnlock.mp3";
+    soundeffect.src = "sound/SFX/RegularUnlock.mp3";
     soundeffect.setAttribute("preload", "auto");
     soundeffect.setAttribute("controls", "none");
     soundeffect.volume = 0.3;
@@ -354,7 +354,7 @@ app.get("/api/market", (req, res) => {
       leviathanSpawned = true;
       let chomp = false;
       const leviathan = document.createElement("img");
-      new Audio("../music/SFX/market/reaper-leviathan-sounds-distant.mp3").play();
+      new Audio("../sound/SFX/market/reaper-leviathan-sounds-distant.mp3").play();
       leviathan.classList.add("js-leviathan");
       leviathan.src = "../img/fishies/EasterEggFishy.png";
   
@@ -373,7 +373,7 @@ app.get("/api/market", (req, res) => {
           console.log("Yo bro theres no hidden achievement, what you doin' up there");
         } else if (window.innerHeight * parseInt(leviathan.style.top) <= submarine.getBoundingClientRect().top) {
           if (chomp == false) {
-            new Audio("../music/SFX/market/chomp-1.mp3").play();
+            new Audio("../sound/SFX/market/chomp-1.mp3").play();
             chomp = true;
           }
           setTimeout(() => {
@@ -390,7 +390,7 @@ app.get("/api/market", (req, res) => {
       if (left > window.innerWidth) {
         if (eastereggnautica != true) {
           eastereggnautica = true;
-          new Audio("../music/SFX/market/subnauticaEasteregg.mp3").play();
+          new Audio("../sound/SFX/market/subnauticaEasteregg.mp3").play();
           // Water donkerder maken
           setTimeout(() => {
             document.body.style.transition = "background 1s ease";
@@ -495,13 +495,13 @@ app.get("/api/market", (req, res) => {
       item.style.left = createRandomNumber(0, 80) + "%";
       item.addEventListener("mousedown", () => {
         if (item.src.endsWith("eel.png")) {
-          new Audio("../music/SFX/market/hi-venomous.mp3").play();
+          new Audio("../sound/SFX/market/hi-venomous.mp3").play();
         } else if (createRandomNumber(1, 10) === 1) {
-          new Audio("../music/SFX/market/pufferfish.mp3").play();
+          new Audio("../sound/SFX/market/pufferfish.mp3").play();
         } else if (createRandomNumber(1, 100) === 1) {
-          new Audio("../music/SFX/market/come-here-fishy-fishy.mp3").play();
+          new Audio("../sound/SFX/market/come-here-fishy-fishy.mp3").play();
         } else {
-          new Audio("../music/SFX/market/you-sir-are-a-fish.mp3").play();
+          new Audio("../sound/SFX/market/you-sir-are-a-fish.mp3").play();
         }
       });
       document.addEventListener("keydown", () => {

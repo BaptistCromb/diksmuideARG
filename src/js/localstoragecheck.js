@@ -44,5 +44,6 @@ if (document.title == "Take a path") {
     const response = await fetch(`http://localhost:3000/api/market`);
     const json = await response.text();
     eval(json);
+    console.log(document.title);
   }
 }
