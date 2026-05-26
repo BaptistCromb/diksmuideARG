@@ -37,9 +37,18 @@ const backgroundmusicfunction = (link, volume) => {
 };
 
 if (document.title == "Take a path") {
-  backgroundmusicfunction("music/HisSadCry.mp3", 0.1);
+  setTimeout(() => {
+    backgroundmusicfunction("music/HisSadCry.mp3", 0.1);
+  }, 1000);
 } else if (document.title == "Collect the fish") {
-  backgroundmusicfunction("../music/Music/WeGoDiving__NoVocalWebsite.mp3", 0.2);
+  setTimeout(() => {
+    backgroundmusicfunction("../sound/Music/WeGoDiving__NoVocalWebsite.mp3", 0.2);
+    console.log("KOMAAAAAANNN");
+  }, 1000);
+} else if (document.title == "Applemarket") {
+  setTimeout(() => {
+    backgroundmusicfunction("../sound/Music/marketbackgroundsong.mp3", 0.2);
+  }, 1000);
 }
 
 // "music/HisSadCry.mp3"

@@ -332,7 +332,7 @@ app.get("/api/offeringsCompleted", (req, res) => {
 app.get("/api/market", (req, res) => {
   const word = req.query.word;
   if (word == "Amazing Fisher") {
-    res.send(`document.body.classList.remove('c-market--diving'); 
+    res.send(` document.body.classList.remove('c-market--diving'); 
       let fishesbyebye = document.querySelectorAll(".js-fish"); 
       for (let i = 0; i < fishesbyebye.length; i++) { 
       let fish = fishesbyebye[i] 
@@ -343,7 +343,7 @@ app.get("/api/market", (req, res) => {
       let title = document.createElement('h1'); title.innerText='Hallo'; document.body.append(title); 
     `);
   } else {
-    res.send(`const nauticaLeviathanEastereggFunction = (submarine, left) => {
+    res.send(`document.title = "Collect the fish"; const nauticaLeviathanEastereggFunction = (submarine, left) => {
       if (leviathanSpawned) return;
   
       if (left <= window.innerWidth + 500) return;

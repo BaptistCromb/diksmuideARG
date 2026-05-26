@@ -5,7 +5,7 @@ import "./localstoragecheck.js";
 import "./mannekeclickcheck.js";
 import "./offeringCheck.js";
 import "./wordcheck.js";
-import "./music.js";
 import "./navanimate.js";
 import "./shootingrange.js";
+import "./music.js";
 // import "./admin.js";
