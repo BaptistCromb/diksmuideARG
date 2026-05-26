@@ -332,7 +332,13 @@ app.get("/api/offeringsCompleted", (req, res) => {
 app.get("/api/market", (req, res) => {
   const word = req.query.word;
   if (word == "Amazing Fisher") {
-    res.send("let title = document.createElement('h1'); title.innerText='Hallo'; document.body.append(title);");
+    res.send(`let title = document.createElement('h1'); title.innerText='Hallo'; document.body.append(title); document.body.classList.remove('c-market--diving'); 
+      let fishesbyebye = document.querySelectorAll(".js-fish"); 
+      for (let i = 0; i < fishesbyebye.length; i++) { 
+      let fish = fishesbyebye[i] 
+      fish.remove() 
+      };
+    `);
   } else {
     res.send(`const nauticaLeviathanEastereggFunction = (submarine, left) => {
       if (leviathanSpawned) return;
