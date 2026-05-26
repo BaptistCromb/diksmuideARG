@@ -8,5 +8,4 @@ import "./wordcheck.js";
 import "./music.js";
 import "./navanimate.js";
 import "./shootingrange.js";
-import "./submarine.js";
 // import "./admin.js";
